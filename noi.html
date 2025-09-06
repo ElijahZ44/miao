@@ -1,0 +1,504 @@
+<script id = "ch0103/01">
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+  var c = a + b
+
+  console.log(c)
+
+</script>
+
+
+<script id = "ch0103/02">
+
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+  var c = +prompt('c:')
+  var d = (a + b) * c
+
+  console.log(d)
+
+</script>
+
+
+<script id = "ch0103/03">
+
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+  var c = +prompt('c:')
+  var d = (a + b) / c 
+
+  console.log(d)
+
+
+</script>
+
+
+<script id = "ch0103/04">
+
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+
+  var c = Math.floor(a / b)
+  var d = a % b
+  console.log(c,d)
+</script>
+
+
+<script id = "ch0103/05">
+
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+  var c = a / b
+  console.log(c.toFixed(9))
+
+</script>
+
+
+<script id = "ch0103/06">
+
+  var a = +prompt('确诊数:')
+  var b = +prompt('死亡数:')
+  var c = b / a 
+  var d = ((c * 100 ).toFixed(3))
+  console.log(d + "%")
+ 
+</script>
+
+
+<script id = "ch0103/07">
+  var func = prompt("x a b c d")
+  var [x,a,b,c,d] = func.split("").map(Number)
+  var solution = a * x * x * x + b * x * x + c * x + d
+  console.log(solution.toFixed(7))
+
+
+
+</script>
+
+
+<script id = "ch0103/08">
+  var F = +prompt('请输入华氏度：')
+  var C =  5 * (F - 32) / 9
+  console.log(C.toFixed(5))
+
+</script>
+
+
+<script id = "ch0103/09">
+  var r = +prompt('请输入半径：')
+  var R = 2 * r
+  var pi = 3.14159
+  var C = 2 * pi * r 
+  var A = pi * r * r 
+  console.log(R.toFixed(4), C.toFixed(4), A.toFixed(4))
+
+</script>
+
+
+<script id = "ch0103/10">
+
+  var r1 = +prompt('请输入电阻1:')
+  var r2 = +prompt('请输入电阻2:')
+  R = 1 / (1 / r1 + 1 / r2)
+  console.log(R.toFixed(2))
+
+</script>
+
+
+<script id = "ch0103/11">
+  var tt = prompt("a b")
+  var [a,b] = tt.split("").map(Number)
+  var solu = a % b
+  console.log(solu)
+
+
+</script>
+
+<script id = "ch0103/12">
+  var r = +prompt('输入半径：')
+  var pi = 3.14
+  var V = 4 / 3 * pi * r ** 3
+  console.log(V.toFixed(2))
+
+
+</script>
+
+<script id = "ch0103/13">
+  var n = +prompt("请输入三位数：")
+  var nr = Number(String(n).split("").reverse().join(""))
+  console.log(nr)
+
+</script>
+
+
+<script id = "ch0103/14">
+  var hr = prompt("h r")
+  var[h,r] = hr.split(" ").map(Number)
+  var pi = 3.14159
+  var T = pi * r * r * h 
+  var L = T / 1000
+  var solution = Math.ceil(20 / L )
+  console.log(solution)
+
+
+
+</script>
+
+<script id = "ch0103/15">
+  var func = prompt("n x y")
+  var [n,x,y] = func.split("").map(Number)
+  var solution = n - Math.floor((y / x)) - 1
+  console.log(solution)
+  
+
+</script>
+
+
+<script id = "ch0103/16">
+  var a = prompt("Xa Ya")
+  var b = prompt("Xb Yb")
+  var [Xa,Ya] = a.split(" ").map(Number)
+  var [Xb,Yb] = b.split(" ").map(Number)
+  var L = Math.sqrt((Xa - Xb)* (Xa - Xb) + (Ya - Yb)* (Ya - Yb))
+  console.log(L.toFixed(3))
+
+</script>
+
+
+<script id = "ch0103/17">
+  var input = prompt("x1 y1 x2 y2 x3 y3 ")
+  var [x1,y1,x2,y2,x3,y3] = input.split(" ").map(Number)
+  var a = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+  var b = Math.sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3))
+  var c = Math.sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3))
+  var s = ((a + b + c) / 2)
+  var A = Math.sqrt(s * (s - a) * (s - b) * (s - c))
+  console.log(A.toFixed(2))
+
+
+
+
+</script>
+
+
+<script id = "ch0103/18">
+  var input = prompt("a1 a2 n")
+  var[a1,a2,n] = input.split(" ").map(Number)
+  var d = a2 - a1
+  var solution = a1 + (n - 1) * d
+  console.log(solution)
+
+
+
+
+</script>
+
+
+<script id = "ch0103/19">
+  var input = prompt("A B")
+  var[A,B] = input.split(" ").map(Number)
+  var solution = A * B
+  console.log(solution)
+
+
+</script>
+
+
+
+<script id = "ch0103/20">
+  var n = +prompt("n")
+
+  var solution = 2 ** n
+  console.log(solution)
+
+
+</script>
+
+<script id = "ch0104/01">
+  var N = +prompt('N:')
+  if (N > 0){
+    console.log("positive")
+  }else if(N == 0){
+    console.log("zero")
+  }else{
+    console.log("negative")
+  }
+
+
+</script>
+
+
+<script id = "ch0104/02">
+  var N = +prompt('N:')
+  if (N > 0) {
+    console.log(N)
+  }else if(N == 0){
+    console.log(0)
+  }else{
+    console.log(-N)
+  }
+
+
+</script>
+<script id = "ch0104/03">
+  var N = +prompt('N:')
+  if(N % 2 ==0){
+    console.log('even')
+  } else{
+    console.log('odd')
+  }
+
+
+</script>
+
+<script id = "ch0104/04">
+  var N = prompt()
+  var ascii = N.charCodeAt(0)
+  if (ascii % 2 == 0){
+    console.log('Yes')
+  }else{
+    console.log('No')
+  }
+
+
+</script>
+
+<script id = "ch0104/05">
+  var N = prompt('输入两个整数：'+ 'x y' )
+  var [x,y] = N.split(' ').map(Number)
+  if (x > y){
+    console.log('>')
+  }else if (x == y){
+    console.log('=')
+  }else{
+    console.log('<')
+  }
+
+
+</script>
+
+
+
+<script id = "ch0104/06">
+  var N = +prompt('请输入：')
+  if (N < 100){
+    console.log('1')
+  }else{
+    console.log('0')
+  }
+
+
+</script>
+
+
+<script id = "ch0104/07">
+
+  var N = prompt('x y')
+  var[x,y] = N.split(' ').map(Number)
+  if (x >= 10){
+    console.log(1)
+  }else if (y >= 20){
+    console.log(1)
+  }else{
+    console.log(0)
+  }
+  
+  
+</script>
+
+<script id = "ch0104/08">
+  var N = +prompt('N:')
+  if (N % 3 == 0 && N % 5 == 0){
+    console.log('YES')
+  }else{
+    console.log('NO')
+  }
+
+</script>
+
+<script id = "ch0104/09">
+  var N = +prompt('N:')
+  if (N % 3 == 0 && N % 5 == 0 && N % 7 == 0){
+    console.log('3 5 7')
+  }else if(N % 3 == 0 && N % 5 == 0){
+    console.log('3 5')
+  }else if (N % 3 == 0 && N % 7 == 0 ){
+    console.log('3 7')
+  }else if(N % 5 == 0 && N % 7 == 0 ){
+    console.log('5 7')
+  }else if (N % 3 == 0 || N % 5 == 0 || N % 7 == 0){
+    console.log('3'||'5'||'7')
+  }else{
+    console.log('n')
+  }
+
+  
+</script>
+
+<script id = "ch0104/10">
+  var N = prompt('X Y')
+  var[X,Y] = N.split(' ').map(Number)
+  if (X <= 60 || Y <= 60){
+    console.log('1')
+  }else{
+    console.log('0')
+  }
+
+</script>
+
+<script id = "ch0104/11">
+var N = +prompt('请输入星期：')
+if (N == 1 || N == 3 || N == 5){
+    console.log('NO')
+}else{
+    console.log('YES')
+}
+  
+  
+</script>
+
+<script id = "ch0104/12">
+  var N = +prompt('请输入距离(m):')
+  var B = N / 3 + 23 + 27
+  var W = N / 1.2
+  if (B > W){
+    console.log('Walk')
+  }else if (B < W){
+    console.log('Bike')
+  }else{
+    console.log('All')
+  }
+
+</script>
+
+<script id = "ch0104/13">
+  var N = +prompt('请输入N:')
+  if (N >= 0 && N < 5){
+    console.log((-N + 2.5).toFixed(3))
+  }else if (N >= 5 && N < 10){
+    console.log((2 - 1.5 * (N - 3) * (N - 3)).toFixed(3))
+  }else if (N >= 10 && N < 20){
+    console.log((N / 2 - 1.5).toFixed(3))
+  }
+
+</script>
+
+<script id = "ch0104/14">
+    var N = +prompt('重量：')
+    var N2 = prompt('是否加急：')
+    var G = 1000 - N 
+    
+    if (N <= 1000 && N2 == 'n'){
+      console.log(8)
+    }else if (N <= 1000 && N2 == 'y'){
+      console.log(13)
+    }else if (N > 1000 && N2 == 'n' && G <= 500){
+      console.log(12 )
+    }else if (N > 1000 && N2 == 'y' && G <= 500){
+      console.log(17)
+    }else if (N > 1000 && N2 == 'n' && G > 500){
+      console.log(8 + (G / 500) * 4)
+    }else if(N > 1000 && N2 == 'y' && G > 500){
+      console.log(8 + (G / 500) * 4 + 5)
+    }
+    
+</script>
+
+<script id = "ch0104/15">
+  var N = prompt('x y z')
+  var[x,y,z] = N.split(' ').map(Number)
+  console.log(Math.max(x,y,z))
+
+  
+  
+</script>
+
+<script id = "ch0104/16">
+  var a = +prompt('a:')
+  var b = +prompt('b:')
+  var c = +prompt('c:')
+  if (a + b > c && a + c > b && b + c > a){
+    console.log('yes')
+  }else {
+    console1.log('no')
+  }
+
+</script>
+
+<script id = "ch0104/17">
+  var a = +prompt()
+  if ((a % 4 === 0 && a % 100 !== 0) || (a % 400 === 0)) {
+  console.log('Y')
+} else {
+  console.log('N')
+}
+  
+  
+</script>
+
+<script id = "ch0104/18">
+  var x = +prompt('x:')
+  var y = +prompt('y:')
+  if (x >= -1 && x <= 1 && y >= -1 && y <= 1) {
+  console.log('yes')
+} else {
+  console.log('no')
+}
+  
+  
+</script>
+
+<script id = "ch0104/19">
+  var x = +prompt()
+  var y = +prompt()
+  var z =  prompt()
+  if(z == '+'){
+    console.log(x + y)
+  }else if(z == '-'){
+    console.log(x - y)
+  }else if (z =='*'){
+    console.log(x * y)
+  }else if (z == '/' && y != 0){
+    console.log(x / y)
+  }else if (y == 0 && z == '/'){
+    console.log('Divided by zero!')
+  }else if(z != '+' && z != '-' && z != '*'&& z != '/'){
+    console.log('Invalid operator!')
+  }
+  
+  
+</script>
+
+<script id = "ch0104/20">
+  var a = +prompt()
+  var b = +prompt()
+  var c = +prompt()
+  var delta = b * b - 4 * a * c
+  var x1 = (-b + Math.sqrt(delta))/ 2 * a
+  var x2 = (-b - Math.sqrt(delta))/ 2 * a
+  if(b * b == 4 * a * c){
+    console.log('x1 = x2 = ',x1.toFixed(5))
+  }if(b * b > 4 * a * c){
+    console.log('x1=' , x1.toFixed(5),';','x2=' , x2.toFixed(5))
+  }if(b * b < 4 * a * c){
+    var real = -b / 2 * a
+    var fake = Math.sqrt((4 * a * c - b * b)) / 2 * a
+    console.log('x1 = ', real.toFixed(5), '+' , fake.toFixed(5) ,'i' ,';', 'x2 = ', real.toFixed(5), '-' ,fake.toFixed(5),'i')
+  }
+  
+</script>
+
+<script id = "ch0104/21">
+  var n = +prompt()
+  var x = +prompt()
+  var y = +prompt()
+
+
+  var eaten = Math.floor(y / x)
+  var remaining = n - eaten
+
+
+  console.log(remaining - 1)
+  
+  
+</script>
